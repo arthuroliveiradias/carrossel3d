@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #348899;
+    font-family: sans-serif;
+    color:black
+}
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+
+}
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: LeoMessi 40s infinite forwards linear;
+
+}
+.imagem{
+    position: absolute;
+    height: 187px;
+    width: 290px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+
+}
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #00008b00;
+
+}
+@keyframes LeoMessi{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+
+}
+.imagem:nth-child(1){
+    background-image: url(https://www.fcbarcelona.com/fcbarcelona/photo/2022/08/02/ae5252d1-b79b-4950-9e34-6e67fac09bb0/LeoMessi20092010_pic_fcb-arsenal62.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagem:nth-child(2){
+    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2023/03/17154209/cristiano-ronaldo-portugal-convocado-1-vez.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://tntsports.com.br/__export/1663011363387/sites/esporteinterativo/img/2022/07/16/lewandowski_comemorando_gol_1.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://noticiasdotimao.com.br/wp-content/uploads/2023/09/Corinthians-Timao-Yuri-Alberto-1.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://sbisoccer.com/wp-content/uploads/JC-1.png);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://esporteemidia.com/wp-content/uploads/2023/11/Kevin-De-Bruyne.jpeg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/10/AV27360Thumb-e1698510243758.jpg?w=1220&h=674&crop=1);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/09/GettyImages-1668971338-e1694439970587.jpg?w=1220&h=674&crop=1);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://www.atribuna.com.br/storage/Esportes/Copa_2022/img4472739813733.webp);
+    transform: rotateY(320deg) translateZ(430px);
+}
